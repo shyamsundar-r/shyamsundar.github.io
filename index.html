@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shyam Sundar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+nav h2 { color: var(--primary); }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul li a:hover { color: var(--primary); }
+
+section { padding: 4rem 8%; }
+.title { font-size: 2rem; margin-bottom: 2rem; }
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 90vh;
+}
+.hero h1 { font-size: 3rem; }
+.hero span { color: var(--primary); }
+.hero p { margin: 1rem 0; color: var(--gray); }
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.btn:hover { transform: translateY(-3px); }
+
+.profile {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid var(--primary);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+  margin-left: auto;
+}
+
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.skill-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+.skill-card:hover { transform: translateY(-6px); }
+
+/* Projects */
+.project {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 14px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+/* Experience */
+.experience {
+  border-left: 4px solid var(--primary);
+  padding-left: 1.5rem;
+}
+
+#about p {
+  text-align: justify;
+  max-width: 900px;
+}
+
+/* Contact */
+form {
+  max-width: 500px;
+  display: grid;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font-family: inherit;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  color: var(--gray);
+}
+
+@media(max-width: 768px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .profile { margin: 2rem auto 0; }
+}
+
+  </style>
+</head>
+<body><nav>
+  <h2>Shyam Sundar R</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Connect</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div>
+    <h1>Hi, I'm <span>Shyam Sundar</span></h1>
+    <p>AI & Data Science undergraduate passionate about Full Stack Development, Machine Learning and building real-world projects.</p>
+    <a href="https://www.linkedin.com/in/rshyamsundar09/" class="btn">Linkedin</a>
+    <a href="https://github.com/shyamsundar-r" class="btn" style="margin-left:10px;">GitHub</a>
+    <a href="mailto:rshyamsundar.in@gmail.com" class="btn" style="margin-left:10px;">Email</a>
+    <a href="files/Shyam_Resume.pdf" download class="btn" style="margin-left:10px;">Resume</a>
+
+  </div>
+  <img src="images/photo.jpeg" alt="Shyam Sundar" class="profile">
+</section>
+<section id="about">
+  <h2 class="title">About Me</h2>
+  <div class="experience">
+    <p>I am an Artificial Intelligence and Data Science undergraduate with a strong foundation in Python, Java, SQL, and object-oriented programming. I enjoy building applications and machine learning solutions that combine solid engineering principles with data-driven intelligence. I have hands-on experience in full-stack development, APIs, databases, and machine learning frameworks like Scikit-learn, TensorFlow, and Keras. I focus on writing clean, efficient code and continuously improving both my technical and problem-solving skills. I am actively looking for opportunities where I can contribute to meaningful projects, collaborate with experienced engineers, and grow as a well-rounded AI and software developer.</p>
+    <small><b>CGPA 9.07</b></small>
+  </div>
+</section><section id="skills">
+  <h2 class="title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><h3>Programming</h3><p>Python, Java, C, SQL</p></div>
+    <div class="skill-card"><h3>Web</h3><p>HTML, CSS, JavaScript, React, Spring Boot</p></div>
+    <div class="skill-card"><h3>Databases</h3><p>MySQL, MongoDB</p></div>
+    <div class="skill-card"><h3>Other</h3><p>Git & GitHub, Machine Learning, Cloud Technologies (AWS,Azure)</p></div>
+  </div>
+</section><section id="projects">
+  <h2 class="title">Projects</h2>
+  <div class="project">
+    <h3>AI-Powered Resume Parser and Organizer - NLP & Recruitment Tech</h3>
+    <p>Designed an NLP-based resume screening solution which helps HR teams automatically parse and categorize resumes based on job requirements.</p>
+    <a href="https://github.com/shyamsundar-r/AI-Powered-Resume-Organizer" class="btn">GitHub</a>
+  </div>
+  <div class="project">
+    <h3>Change Sentinel</h3>
+    <p>Designed to assist officials and researchers in detecting and forecasting environmental changes in real time.</p>
+    <a href="https://github.com/shyamsundar-r/Change-Sentinel-Project" class="btn">GitHub</a>
+  </div>
+  <div class="project">
+    <h3>Smart Student Hub - Full-Stack AI Integration</h3>
+    <p>Developed a centralized digital platform using Node.js, React, and MongoDB for verified academic and non-academic student records and recommendation engine suggesting career paths based on student activity data.</p>
+    <a href="https://github.com/shyamsundar-r/Smart-Student-Hub-Project" class="btn">GitHub</a>
+  </div>
+</section><section id="experience">
+  <h2 class="title">Experience</h2>
+  <div class="experience">
+    <h3>Ethical Hacking & Cybersecurity Trainee – National Small Industries Corporation (NSIC) </h3>
+    <p>Completed intensive 15-day hands-on training in Ethical Hacking and Network Security protocols.</p>
+    <small>December 2024</small>
+  </div>
+</section><section id="contact">
+  <h2 class="title">Let's Connect</h2>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Subject" required>
+    <textarea rows="4" placeholder="Message" required></textarea>
+    <button class="btn">Send Message</button>
+  </form>
+</section><footer>© 2026 Shyam Sundar R. All Rights Reserved.</footer><script>
+  function sendMessage(e) {
+    e.preventDefault();
+    alert('Message sent successfully!');
+  }
+</script></body>
+</html>
