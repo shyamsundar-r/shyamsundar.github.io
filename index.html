@@ -397,14 +397,17 @@
       gap: 1.8rem;
     }
     .project-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem;
-      transition: all 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
     .project-card::before {
       content: '';
       position: absolute;
@@ -432,7 +435,13 @@
       margin-bottom: 0.7rem;
       color: var(--text-primary);
     }
-    .project-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.2rem; }
+    .project-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
     .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
     .tag {
       font-size: 0.72rem;
@@ -779,28 +788,29 @@
     <div class="projects-grid">
       <div class="project-card reveal">
         <div class="project-number">01</div>
-        <div class="project-title">AI Powered Resume Parser</div>
-        <p class="project-desc">An intelligent system that extracts, parses, and structures key information from resumes using natural language processing and machine learning techniques to streamline recruitment workflows.</p>
+        <div class="project-title">AI-Powered Resume Parser and Categorization for Smarter Recruitment</div>
+        <p class="project-desc">Designed an NLP-based resume screening system to automate candidate shortlisting and categorization based on skills and HR requirements. Intelligent ranking implemented to improve evaluation efficiency.</p>
         <div class="project-tags">
           <span class="tag">Python</span>
           <span class="tag">NLP</span>
-          <span class="tag">Machine Learning</span>
+          <span class="tag">Flask</span>
         </div>
       </div>
       <div class="project-card reveal">
         <div class="project-number">02</div>
-        <div class="project-title">AI Change Detection System</div>
-        <p class="project-desc">A computer vision powered system that detects and highlights changes between images or video frames in real time, useful for monitoring, surveillance, and quality control applications.</p>
+        <div class="project-title"> Robust Change Detection, Monitoring and Alert System on User-Defined AOI Using Multi-Temporal
+LISS-4 Satellite Imagery (ChangeSentinel)</div>
+        <p class="project-desc">Built an AI-powered change detection system using LISS-4 and Sentinel imagery for detection and monitoring changes in user-defined areas, with a dashboard that allows real-time alerts.</p>
         <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Computer Vision</span>
-          <span class="tag">AI/ML</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">U-Net</span>
+          <span class="tag">Google Earth Engine</span>
         </div>
       </div>
       <div class="project-card reveal">
         <div class="project-number">03</div>
-        <div class="project-title">Smart Student Hub</div>
-        <p class="project-desc">A full-stack web platform designed to help students manage academics, collaborate on projects, track progress, and access resources — all in one unified and intuitive hub.</p>
+        <div class="project-title"> Smart Student Hub- Centralized Digital Platform for Student Activity Records</div>
+        <p class="project-desc">Built a web platform to centralize student achievements with verified digital profiles. Designed role-based dashboards and integrated career guidance and recommendation features.</p>
         <div class="project-tags">
           <span class="tag">React</span>
           <span class="tag">Spring Boot</span>
